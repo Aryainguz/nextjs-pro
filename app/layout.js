@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Nextjs Practice App',
-  description: 'A practice app for Next.js 14',
+  description: 'A practice app to practice Nextjs 14 app router and SSR',
 }
 
 export default function RootLayout({ children }) {
