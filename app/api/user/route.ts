@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  await User.create({
+  const user = await User.create({
     name: "Jhon Doe",
     email: "jhondoe@gmail.com",
   });
@@ -31,6 +31,7 @@ export async function POST(req: NextRequest) {
     {
       message: "User created",
       success: true,
+      user:JSON.stringify(user)
     },
     {
       status: 201,
