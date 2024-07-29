@@ -1,9 +1,8 @@
 import { User } from "@/models/userSchema";
 import connectDB from "@/utils/db";
-import { NextApiRequest } from "next";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function POST(req: NextApiRequest) {
+export async function POST(req: NextRequest) {
   await connectDB();
 
   const userExists = await User.findOne({
