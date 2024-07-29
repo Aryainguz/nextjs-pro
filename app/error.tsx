@@ -8,7 +8,7 @@ const Error = () => {
       <h1>404</h1>
       <p>Page Not Found</p>
       <p>
-        Error pages needs to be client side rendered. This is because the server does not have access to the browser's window object.
+        Error pages needs to be client side rendered. This is because the server does not have access to the browser window object.
       </p>
     </div>
   )
